@@ -24,6 +24,6 @@
 
   <div class="actions">
     <%= f.label "Submit Post" %><br>
-    <%= f.submit if @post.new_record? "Submit Post" else "Update Post" end %>
+    <%= f.submit @post.new_record? ? "Submit Post" : "Update Post" %>
   </div>
 <% end %>
